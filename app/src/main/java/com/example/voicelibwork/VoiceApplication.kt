@@ -2,6 +2,7 @@ package com.example.voicelibwork
 
 import android.app.Application
 import android.content.Context
+import com.example.voicelibwork.systemtts.SystemTTS
 
 class VoiceApplication : Application() {
     override fun onCreate() {

@@ -3,6 +3,8 @@ package com.example.voicelibwork
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
+import com.example.voicelibwork.systemtts.SystemTTS
+import com.example.voicelibwork.util.Logger
 
 class MainActivity : AppCompatActivity() {
     private lateinit var tv1:TextView
@@ -12,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         tv1 = findViewById(R.id.tv1)
         tv1.setOnClickListener {
             Logger.instance.d("点击文本")
-            SystemTTS.instance.playText("这是一条测试语音")
+            SystemTTS.instance.playText("测试语音")
         }
     }
 }
